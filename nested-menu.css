@@ -12,12 +12,8 @@ body {
     height: 100%;
     margin: 0;
 }
-a {
-    color: inherit;
-    text-decoration: none;
-}
 
-.menu {
+.nested-menu {
     background-color: white;
     border-bottom: 1px solid black;
     list-style: none;
@@ -25,18 +21,23 @@ a {
     padding: 0;
     z-index: 1;
 }
-.menu > li {
+.nested-menu > li {
     display: inline-block;
     position: relative;
 }
-.menu li:hover ul {
+/**
+ * Uncomment for hover dropdown capability
+ */
+/*.menu li:hover ul {
     display: block;
-}
-.menu a {
+}*/
+.nested-menu a {
     display: block;
+    color: inherit;
     padding: 12px 24px;
+    text-decoration: none;
 }
-.menu a:hover {
+.nested-menu li:hover {
     background-color: #ccc;
     -webkit-transition: background-color .5s ease;
     -moz-transition: background-color    .5s ease;
@@ -44,7 +45,7 @@ a {
     -o-transition: background-color      .5s ease;
     transition: background-color         .5s ease;
 }
-.menu ul {
+.nested-menu ul {
     border-color: black;
     border-style: solid;
     border-width: 0 1px 1px 1px;
@@ -54,6 +55,6 @@ a {
     padding: 0;
     position: absolute;
 }
-.menu ul li {
+.nested-menu ul li {
     background-color: white;
 }

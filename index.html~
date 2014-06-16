@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="nested-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <meta charset="UTF-8">
     <title>mockidup</title>
 </head>
 <body>
-    <ul id="nestedMenu" class="nested-menu">
+    <ul id="menu" class="menu">
         <li>
             <a href="#">file</a>
             <ul>
@@ -20,17 +20,18 @@
                 <li id="menuFileNew"><a href="#">beta &beta;</a></li>
                 <li id="menuFileLoad"><a href="#">gamma &gamma;</a></li>
                 <li><a href="#">delta &delta;</a></li>
-                <li><a href="#">epsilon &epsilon;</a></li>
+                <li ><a href="#">epsilon &epsilon;</a></li>
             </ul>
         </li>
-        <li><a href="#">more...</a></li>
+        <li><a href="">more...</a></li>
     </ul>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="nested-menu.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.nested-menu').nestedMenu();
-        });
-    </script>
+
+    <script src="scripts/js/lib/dependencies.js"></script>
+    <script src="scripts/js/model/page.js"></script>
+    <script src="scripts/js/collection/pages.js"></script>
+    <script src="scripts/js/view/page-preview.js"></script>
+    <script src="scripts/js/view/page-edit.js"></script>
+    <script src="scripts/js/controller/page-preview.js"></script>
+    <script src="scripts/js/main.js"></script>
 </body>
 </html>
