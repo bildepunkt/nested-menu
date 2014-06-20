@@ -23,12 +23,12 @@
             e.preventDefault();
             e.stopPropagation();
 
-            $self.find('ul').stop().fadeOut('fast');
+            $self.find('ul').stop().fadeOut(200);
 
             if ($liUl.css('display') == 'none') {
-                $liUl.stop().fadeIn('fast');
+                $liUl.stop().fadeIn(200);
             } else {
-                $liUl.stop().fadeOut('fast');
+                $liUl.stop().fadeOut(200);
             }
         };
 
@@ -36,7 +36,7 @@
             e.preventDefault();
             e.stopPropagation();
 
-            $self.find('ul').stop().fadeOut('fast');
+            $self.find('ul').stop().fadeOut(200);
         };
 
         self.destroy = function() {

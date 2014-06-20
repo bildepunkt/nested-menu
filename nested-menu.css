@@ -2,17 +2,6 @@
  * Main CSS
  */
 
-html {
-    height: 100%;
-}
-body {
-    color: #666;
-    background-color: #aaa;
-    font-family: sans-serif;
-    height: 100%;
-    margin: 0;
-}
-
 .nested-menu {
     background-color: white;
     border-bottom: 1px solid black;
@@ -39,11 +28,11 @@ body {
 }
 .nested-menu li:hover {
     background-color: #ccc;
-    -webkit-transition: background-color .5s ease;
-    -moz-transition: background-color    .5s ease;
-    -ms-transition: background-color     .5s ease;
-    -o-transition: background-color      .5s ease;
-    transition: background-color         .5s ease;
+    -webkit-transition: background-color .2s ease;
+    -moz-transition: background-color    .2s ease;
+    -ms-transition: background-color     .2s ease;
+    -o-transition: background-color      .2s ease;
+    transition: background-color         .2s ease;
 }
 .nested-menu ul {
     border-color: black;
@@ -51,9 +40,10 @@ body {
     border-width: 0 1px 1px 1px;
     display: none;
     list-style: none;
-    min-width: 160px;
+    min-width: 180px;
     padding: 0;
     position: absolute;
+    z-index: 1;
 }
 .nested-menu ul li {
     background-color: white;
